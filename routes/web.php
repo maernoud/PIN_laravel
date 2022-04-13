@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    //return view('welcome');
+   return view('welcome');
 });
+Route::get('/mail', function () {
+    return view('mail');
+ });
+ 
 
 // Route::POST('/post', 'App\Http\Controllers\ContactController@postName')->name('save_post');
