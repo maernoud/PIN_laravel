@@ -58,7 +58,6 @@ class ContactController extends Controller
 
 // isset()
 /* 
-hola
-vladi qlo me hiciste escribir un comentario qlo 
+
 
 */
