@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {  
@@ -45,7 +46,11 @@ class ContactController extends Controller
                 'message'=>$res['message']
             ]);
           
-            \Mail::to($res['email'])->send(new \App\Mail\avisoContacto($res));
+            // $details = [
+            //     'title' => 'Post title: ' . $request->name,
+            //     'body' => $request->res
+            //     ];
+            Mail::to($res['email'])->send(new \App\Mail\avisoContacto($res));
             
             return (["status"=>201]);
 
