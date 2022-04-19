@@ -7,12 +7,11 @@ use App\Models\Contact;
 
 class ContactController extends Controller
 {  
-    /* 
-    Develop de red object and de message of success or error
-    */
+  
 
     public function postName(Request $request){
-
+        /* validar 
+        mail*/
         function mailValidator($mail){
             $mail_helper = explode("@", $mail);
     
@@ -45,8 +44,8 @@ class ContactController extends Controller
                 'tel'=>$res['tel'], 
                 'message'=>$res['message']
             ]);
-    
-            \Mail::to($res['email'])->send(new \App\Mail\sendContact($res));
+          
+            \Mail::to($res['email'])->send(new \App\Mail\avisoContacto($res));
             
             return (["status"=>201]);
 
@@ -56,8 +55,4 @@ class ContactController extends Controller
     }
 }
 
-// isset()
-/* 
 
-
-*/

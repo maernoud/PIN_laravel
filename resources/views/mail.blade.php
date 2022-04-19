@@ -12,12 +12,13 @@
     </style>
 </head>
 <body class="antialiased">
-    <h1>Recibimos tu mensaje! </h1>
+    <h1>Recibimos tu mensaje! {{ $detail['name'] }} </h1>
     <p>Los datos que recibimos son:</p>
-    <p><b>Nombre:</b> {{ $details['name'] }}</p>
-    <p><b>Teléfono:</b> {{ $details['tel'] }}</p>
-    <p><b>Mensaje:</b> {{ $details['message'] }}</p>
-    <p>Si no te anotaste en nuestro sitio por favor ponte en contacto con nosotros.</p>
+    <p><b>Nombre:</b> {{ $detail['name'] }}</p>
+    <p><b>Teléfono:</b> {{ $detail['tel'] }}</p>
+    <p><b>Mensaje:</b> {{ $detail['message'] }}</p>
+    <p>Pronto nos estaremos poniendo en contacto</p>
+    
 </body>
 
 </html>
