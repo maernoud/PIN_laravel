@@ -63,23 +63,7 @@
         </p>
     </section>
 
-    <section>
-        <h2>El Funcionamiento</h2>
-        <p></p>
-        <ul>
-            <li>La API <code>post</code> recibe una solicitud y pasa la información al <code>ContactController</code>.</li>
-            <li>El contacto controller valida la información recibida, en el caso de que los datos sean inválidos, responde al cliente con un <code>{"status":200}</code>, significando que la conexión fue exitosa.</li>
-            <li>En el caso de que la validación sea superada, se procede a guardar el registro en base de datos, enviar un correo con la plantilla <code>mail.blade.php</code> y se responde con un <code>{"status":201}</code>, indicando un nuevo registro creado en la base de datos.</li>
-        </ul>
-    </section>
 
-    <section>
-        <h2> El deploy</h2>
-        <p>
-            A la hora de hacer el deploy de la aplicación se eligieron los servidores de Heroku y una base de datos gratuita de Clever Cloud. El proceso fue relativamente sencillo, configurando la ruta del proyecto en heroku como un <code>git remote</code> de este repositorio y empujando ahí el código correspondiente. <br>  
-            Una vez la aplicación estuvo en la nube, se realizó una migración de la base de datos en Clever Cloud y se pudo utilizar con normalidad.
-        </p>
-    </section>
 </body>
     
 </html>
