@@ -6,7 +6,7 @@ Para desarrollar el servidor del Proyecto Integrador se utilizó el lenguaje de 
 La aplicación cuenta con dos rutas principales:
 * La ruta raíz (/): Que despliega la documentación del proyecto.
 * La API post (/api/post): Que contiene la funcionalidad de validación de datos y registro.
-Además. se agragó la api de testing `answer`, que sirve para verificar la conección con el cliente.
+
 
 ## Las vistas
 Para completar el proyecto se desarrollaron dos vistas:
